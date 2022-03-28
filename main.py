@@ -15,7 +15,7 @@ def settimeout(duration):
 wlan = WLAN(network.STA_IF)
 if not wlan.isconnected():
     wlan.active(True)
-    wlan.connect("hydra", "elbuengus")
+    wlan.connect("hydra", "**************")
     while not wlan.isconnected(): 
         pass
 print("Connected to Wifi", wlan.ifconfig())
