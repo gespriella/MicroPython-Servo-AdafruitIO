@@ -20,7 +20,7 @@ if not wlan.isconnected():
         pass
 print("Connected to Wifi", wlan.ifconfig())
 
-client = MQTTClient("LOLIN32", "io.adafruit.com",user="espriella", password="aio_DSVF93S1wRcTogplHexUV16ep9rr", port=1883)
+client = MQTTClient("LOLIN32", "io.adafruit.com",user="espriella", password="*******************", port=1883)
 client.settimeout = settimeout
 client.set_callback(sub_callback)
 client.connect()
